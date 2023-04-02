@@ -74,33 +74,28 @@ body{
   background-size: contain;
   background-position: top  ;
   background-color: var(--clr--Violet);
-
-  height: 100vh;
-  width: 100vw;
-  padding: 2rem 2.25rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  
 }
 .navbar{
-  height: 5rem;
+  width: 100%;
+  height: auto;
 }
 .logo{
 width: 140px;
 }
 .header{
-  height: calc(100vh - 8rem);
+  height:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   width: 100%;
+  padding: 1rem 4rem;
 }
 
 .header-left-container{
 padding: 1rem;
-width:60%
 }
 .header-right-container{
   display: flex;
@@ -108,14 +103,14 @@ width:60%
   align-items: center;
   gap: 1rem;
   text-align: center;
-  width:40%
 }
 .header-title{
 color: #fff;
+width: 80%;
 font-size: 2rem;
 font-family: var(--ff-poppins);
 line-height: 1.5;
-text-align: start;
+text-align: center;
 gap: 2rem;
 
 }
@@ -124,32 +119,51 @@ gap: 2rem;
   font-size: 1rem;
   font-family: var(--ff-Open-Sans);
   line-height: 1.5;
-  text-align: start;
+  width: 68%;
+  text-align: center;
   gap: 3rem;
   
 }
 .footer{
-  height: 4rem;
-  width: 100%;
-}
-.icons-container{
+  height:auto;
   width: 100%;
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  
 }
-.icon-link{
-
-  display: block;
+.icon-list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  gap:1.5rem;
+}
+.icons{
   width: 3rem;
   height: 3rem;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  font-size: 1.5rem;
   display: flex;
-  color: #fff;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.icon{
+  color: #fff;
+  width: 100%;
+  height:3rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon:hover{
+  color: var(--clr--Soft--Magenta);
+  border: 2px solid var(--clr--Soft--Magenta);
 }
 @media screen and (min-width: 576px) {
 }
@@ -164,6 +178,7 @@ gap: 2rem;
 
 @media (min-width: 991px) { 
   body{
+  margin-top: 3rem;
   background-image: url('../images/bg-desktop.svg');
 }
 .header{
@@ -171,9 +186,42 @@ gap: 2rem;
   width: 100%;
   height: auto;
 }
+.header-left-container{
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+}
+.header-right-container{
+  width: 40%;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+.header-title{
+  text-align: start;
+  width:85%;
+}
+.header-description{
+  text-align: start;
+  width: 101%;
+}
+.btn{
+  text-align: start;
+}
 .navbar{
   height: 6rem;
-  width: 50%;
+  width: 100%;
+  margin-left: 5rem;
+  
+}
+.logo{
+  width: 12rem;
+}
+.icon-list{
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+  margin-bottom: 3.5rem;
+  
 }
 }
 
