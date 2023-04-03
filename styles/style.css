@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  margin-top: 3rem;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
@@ -160,6 +161,8 @@ gap: 2rem;
   display:flex;
   align-items: center;
   justify-content: center;
+  
+  
 }
 .icon:hover{
   color: var(--clr--Soft--Magenta);
